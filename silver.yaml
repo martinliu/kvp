@@ -1,0 +1,11 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: silver
+provisioner: nutanix/abs
+parameters:
+     prismEndPoint: 10.5.65.152:9440
+     dataServiceEndPoint: 10.5.65.153:3260
+     user: admin
+     password: mypassword
+     storageContainer: my-k8s-container
