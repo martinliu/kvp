@@ -1,10 +1,12 @@
-# Kubernetes Volume Plugi使用指南
+# Nutanix Kubernetes Volume Plugi
 
-Kubernetes Volume Plugin demo
+使用Nutanix后台的ABS存储服务，通过iSCSI协议链接，在k8s worker节点上使用nutanix提供的provisioner容器。
+
 
 ## 需求
 
-* 在所有的节点上安装和运行 yml install iscs-initlator-utils -y； 并且启用这个服务
+* 本文以CentOs/RHEL 7 为例子
+* 在所有的节点上安装和运行 yml install iscsi-initlator-utils -y； 并且启用这个服务
 * 在所有节点上加载ntnx/nutanixabs-provisioner镜像文件
 
 ## 配置步骤
